@@ -1,0 +1,9 @@
+<img [src]="user.photo" [alt]="user.name">
+<p>Nom : {{user.name}}</p>
+<p>Prénom : {{user.firstName}}</p>
+<p [hidden]="user.hidden">Age : {{user.age}}</p>
+<button (click)="changeHidden()">Afficher / Masquer mon âge</button>
+<form action="">
+    <input type="text" [(ngModel)]="user.quote" [placeholder]="user.quote">
+    <button>Changer la phrase</button>
+</form>
