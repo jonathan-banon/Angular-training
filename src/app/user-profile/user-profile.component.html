@@ -4,4 +4,4 @@
 <p [hidden]="user.hidden">Age : {{user.age}}</p>
 <button (click)="changeHidden()">Afficher / Masquer mon âge</button>
 <p>{{ user.quote }}</p>
-<input  />
+<input type="text" [(ngModel)]="user.quote"/>
