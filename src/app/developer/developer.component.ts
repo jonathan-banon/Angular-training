@@ -9,8 +9,10 @@ import { Skill } from '../models/skill';
 })
 export class DeveloperComponent implements OnInit {
 
-  skills: Skill[] = [];
-  developer: Developer = new Developer("", "", 0, "", "", this.skills);
+  developer: Developer = new Developer("", "", 0, "", "", 
+  [
+    new Skill("", "", "")
+  ]);
   constructor() { }
 
   ngOnInit(): void {
