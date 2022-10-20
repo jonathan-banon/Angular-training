@@ -7,16 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
-import { SignupComponent } from './signup/signup.component';
 import { UserComponent } from './user/user.component';
+import { MyFormComponent } from './sign-up/sign-upcomponent';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     MenuComponent,
-    SignupComponent,
-    UserComponent
+    UserComponent,
+    MyFormComponent
   ],
   imports: [
     BrowserModule,
