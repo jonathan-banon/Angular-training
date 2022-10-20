@@ -11,6 +11,8 @@ import { UserComponent } from './user/user.component';
 import { MyFormComponent } from './sign-up/sign-upcomponent';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
+import { FormComponent } from './form/form.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SkillComponent } from './skill/skill.component';
     UserComponent,
     MyFormComponent,
     DeveloperComponent,
-    SkillComponent
+    SkillComponent,
+    FormComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
