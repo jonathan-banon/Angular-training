@@ -9,6 +9,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
 import { UserComponent } from './user/user.component';
 import { MyFormComponent } from './sign-up/sign-upcomponent';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MyFormComponent } from './sign-up/sign-upcomponent';
     UserProfileComponent,
     MenuComponent,
     UserComponent,
-    MyFormComponent
+    MyFormComponent,
+    DeveloperComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
