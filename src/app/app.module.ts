@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 import { FormsModule } from '@angular/forms';
 
@@ -15,6 +16,7 @@ import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,12 +28,13 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     SkillComponent,
     FormComponent,
     ListComponent,
-    CocktailListComponent
+    CocktailListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
