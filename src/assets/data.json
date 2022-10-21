@@ -1,17 +1,17 @@
-{
-    "cocktail1": {
+[
+    {
         "name": "Sex on the beach",
         "price": 10,
         "image": "mon image"
     },
-    "morito": {
+    {
         "name": "Marguarita",
         "price": 13,
         "image": "mon image"
     },
-    "cocktail3": {
+    {
         "name": "Martini",
         "price": 8,
         "image":"mon image"
     }
-}
+]

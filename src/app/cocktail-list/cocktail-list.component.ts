@@ -9,7 +9,7 @@ import { Cocktail } from '../models/cocktail';
 })
 export class CocktailListComponent implements OnInit {
 
-  cocktails: Cocktail[] = [];
+  public cocktails: Cocktail[] = [];
 
   constructor(public cocktailService: CocktailService) { }
 
