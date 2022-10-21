@@ -13,6 +13,7 @@ import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListComponent } from './list/list.component';
     DeveloperComponent,
     SkillComponent,
     FormComponent,
-    ListComponent
+    ListComponent,
+    CocktailListComponent
   ],
   imports: [
     BrowserModule,
