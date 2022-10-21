@@ -1,1 +1,7 @@
-<p>form works!</p>
+
+<h1>Liste des Onomatopées</h1>
+
+<label for="name">Mettre l'onomatopée ici:</label>
+<input type="text" name="name" [(ngModel)]="newOnomatopia">
+<p>{{newOnomatopia}}</p>
+<button (click)="createOnomatopia()">Generate</button>

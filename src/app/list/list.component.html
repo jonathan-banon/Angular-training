@@ -1,1 +1,4 @@
-<p>list works!</p>
+<app-form (sendOnomatopiaToParent)="receiveNewOnomatopia($event)"></app-form>
+<ul *ngFor="let onomatopee of onomatopoeiaList">
+    <li>{{onomatopee}}</li>
+</ul>

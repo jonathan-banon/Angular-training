@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  onomatopoeiaList: String[] = [];
+  onomatopoeiaList: string[] = [];
 
-  onReceiveNewOnomatopia(): void {
-
+  receiveNewOnomatopia(event: string): void {
+    this.onomatopoeiaList.push(event).toString();
+    console.log(event);
   }
-  
+
   constructor() { }
 
   ngOnInit(): void {
