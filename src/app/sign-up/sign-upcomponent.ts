@@ -9,13 +9,7 @@ import { User } from '../models/user';
 })
 export class MyFormComponent implements OnInit {
 
-  user: User = new User("", "", "", "");
-
   constructor() { }
-
-  OnSubmit(): void {
-    console.log(this.user);
-  }
 
   ngOnInit(): void {
   }

@@ -1,8 +1,10 @@
+import { Adress } from "./adress";
+
 export class User {
     constructor(
+        public name: string,
         public email: string,
-        public firstname: string,
-        public lastname: string,
-        public password: string
+        public password: string,
+        public adress: Adress[]
     ) {}
 }
