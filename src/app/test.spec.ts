@@ -1,6 +1,6 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
-import { CocktailService } from './cocktail.service';
+import { CocktailService } from './service/cocktail.service';
 
 describe('Quest Test Suite', () => {
   beforeEach(waitForAsync(() => {

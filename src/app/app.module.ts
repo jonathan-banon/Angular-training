@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormsModule } from '@angular/forms';
@@ -16,6 +16,8 @@ import { SkillComponent } from './skill/skill.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { LogInterceptor } from './core/log.interceptor';
+import { RequestComponent } from './request/request.component';
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     FormComponent,
     ListComponent,
     CocktailListComponent,
+    RequestComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,13 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LogInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

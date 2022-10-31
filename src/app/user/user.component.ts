@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-user',
@@ -7,13 +7,25 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  username = new FormControl('');
-  Email = new FormControl('');
-  paswword = new FormControl('');
-  adress = new FormControl('');
+  public userForm: FormGroup = this.fb.group({
+    username: [''],
+    address: this.fb.group({
+      street:[''],
+      city:[''],
+      zipCode: [''],
+    }),
+    credential: this.fb.group({
+      email: [''],
+      password: ['']
+    })
+  })
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
+  onSubmit(): void {
+    console.log(this.userForm.value);
+  }
+  
   ngOnInit(): void {
   }
 
