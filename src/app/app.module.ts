@@ -16,8 +16,13 @@ import { SkillComponent } from './skill/skill.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
-import { LogInterceptor } from './core/log.interceptor';
 import { RequestComponent } from './request/request.component';
+import { LogInterceptor } from './log.interceptor';
+import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminComponent } from './admin/admin.component';
+
+
 
 
 @NgModule({
@@ -33,6 +38,9 @@ import { RequestComponent } from './request/request.component';
     ListComponent,
     CocktailListComponent,
     RequestComponent,
+    HomeComponent,
+    DashboardComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

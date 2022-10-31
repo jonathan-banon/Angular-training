@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { delay, Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-user',
@@ -25,6 +26,8 @@ export class UserComponent implements OnInit {
   onSubmit(): void {
     console.log(this.userForm.value);
   }
+
+  
   
   ngOnInit(): void {
   }
